@@ -1,15 +1,15 @@
 //
 //  ViewController.swift
-//  Quizzler-iOS13
+//  BMI Calculator
 //
-//  Created by Angela Yu on 12/07/2019.
-//  Copyright © 2019 The App Brewery. All rights reserved.
+//  Created by Angela Yu on 21/08/2019.
+//  Copyright © 2019 Angela Yu. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
