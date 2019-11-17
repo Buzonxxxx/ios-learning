@@ -14,8 +14,6 @@ class ResultsViewController: UIViewController {
     var tip = 10
     var splitNumber = 2
     
-    
-    
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var settingsLabel: UILabel!
     
@@ -28,7 +26,4 @@ class ResultsViewController: UIViewController {
     @IBAction func recalculateButton(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    
-   
-
 }

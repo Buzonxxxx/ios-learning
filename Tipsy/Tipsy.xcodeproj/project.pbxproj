@@ -14,7 +14,18 @@
 		ADB6895C2326708E006D4E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB6895B2326708E006D4E2B /* Assets.xcassets */; };
 		ADB6895F2326708E006D4E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB6895D2326708E006D4E2B /* LaunchScreen.storyboard */; };
 		BF95B9FB237162BC009F5378 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF95B9FA237162BC009F5378 /* ResultsViewController.swift */; };
+		BFF43F47237AA26E00746503 /* TipsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF43F46237AA26E00746503 /* TipsyTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFF43F49237AA26E00746503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADB689472326708D006D4E2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADB6894E2326708D006D4E2B;
+			remoteInfo = Tipsy;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		ADB6894F2326708D006D4E2B /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,20 @@
 		ADB6895E2326708E006D4E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADB689602326708E006D4E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF95B9FA237162BC009F5378 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		BFF43F44237AA26E00746503 /* TipsyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF43F46237AA26E00746503 /* TipsyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyTests.swift; sourceTree = "<group>"; };
+		BFF43F48237AA26E00746503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ADB6894C2326708D006D4E2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF43F41237AA26E00746503 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				ADB689512326708D006D4E2B /* Tipsy */,
+				BFF43F45237AA26E00746503 /* TipsyTests */,
 				ADB689502326708D006D4E2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				ADB6894F2326708D006D4E2B /* Tipsy.app */,
+				BFF43F44237AA26E00746503 /* TipsyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +101,15 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		BFF43F45237AA26E00746503 /* TipsyTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFF43F46237AA26E00746503 /* TipsyTests.swift */,
+				BFF43F48237AA26E00746503 /* Info.plist */,
+			);
+			path = TipsyTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,18 +130,40 @@
 			productReference = ADB6894F2326708D006D4E2B /* Tipsy.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BFF43F43237AA26E00746503 /* TipsyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF43F4D237AA26E00746503 /* Build configuration list for PBXNativeTarget "TipsyTests" */;
+			buildPhases = (
+				BFF43F40237AA26E00746503 /* Sources */,
+				BFF43F41237AA26E00746503 /* Frameworks */,
+				BFF43F42237AA26E00746503 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFF43F4A237AA26E00746503 /* PBXTargetDependency */,
+			);
+			name = TipsyTests;
+			productName = TipsyTests;
+			productReference = BFF43F44237AA26E00746503 /* TipsyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		ADB689472326708D006D4E2B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "The App Brewery";
 				TargetAttributes = {
 					ADB6894E2326708D006D4E2B = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					BFF43F43237AA26E00746503 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = ADB6894E2326708D006D4E2B;
 					};
 				};
 			};
@@ -127,6 +181,7 @@
 			projectRoot = "";
 			targets = (
 				ADB6894E2326708D006D4E2B /* Tipsy */,
+				BFF43F43237AA26E00746503 /* TipsyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +194,13 @@
 				ADB6895F2326708E006D4E2B /* LaunchScreen.storyboard in Resources */,
 				ADB6895C2326708E006D4E2B /* Assets.xcassets in Resources */,
 				ADB6895A2326708D006D4E2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF43F42237AA26E00746503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +218,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFF43F40237AA26E00746503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF43F47237AA26E00746503 /* TipsyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFF43F4A237AA26E00746503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADB6894E2326708D006D4E2B /* Tipsy */;
+			targetProxy = BFF43F49237AA26E00746503 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ADB689582326708D006D4E2B /* Main.storyboard */ = {
@@ -326,6 +404,48 @@
 			};
 			name = Release;
 		};
+		BFF43F4B237AA26E00746503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZKAV74ARP;
+				INFOPLIST_FILE = TipsyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.louisliao.TipsyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipsy.app/Tipsy";
+			};
+			name = Debug;
+		};
+		BFF43F4C237AA26E00746503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZKAV74ARP;
+				INFOPLIST_FILE = TipsyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.louisliao.TipsyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipsy.app/Tipsy";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,6 +463,15 @@
 			buildConfigurations = (
 				ADB689642326708E006D4E2B /* Debug */,
 				ADB689652326708E006D4E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFF43F4D237AA26E00746503 /* Build configuration list for PBXNativeTarget "TipsyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF43F4B237AA26E00746503 /* Debug */,
+				BFF43F4C237AA26E00746503 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
