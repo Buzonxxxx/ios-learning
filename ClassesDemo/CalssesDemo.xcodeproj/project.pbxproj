@@ -95,7 +95,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1110;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "廖政豪";
 				TargetAttributes = {
 					BF4387E5236FCCB200E24AF2 = {
@@ -251,6 +251,7 @@
 		BF4387EE236FCCB200E24AF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7ZKAV74ARP;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -262,6 +263,7 @@
 		BF4387EF236FCCB200E24AF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7ZKAV74ARP;
 				ENABLE_HARDENED_RUNTIME = YES;

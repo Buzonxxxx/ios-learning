@@ -41,25 +41,25 @@
 //print(arr)
 
 // [struct]
-//struct Town {
-//    let name: String
-//    var citizens: [String]
-//    var resources: [String: Int]
-//
-//    init(name: String, citizens: [String], resources: [String: Int]) {
-//        self.name = name
-//        self.citizens = citizens
-//        self.resources = resources
-//    }
-//
-//    func fortify(){
-//        print("Defences increased!")
-//    }
-//}
-//
-//var anotherTown = Town(name: "Louisland", citizens: ["Louis", "Anney"], resources: ["Mondy": 100, "Water": 1000])
-//anotherTown.fortify()
-//print(anotherTown.name)
+struct Town {
+    let name: String
+    var citizens: [String]
+    var resources: [String: Int]
+
+    init(name: String, citizens: [String], resources: [String: Int]) {
+        self.name = name
+        self.citizens = citizens
+        self.resources = resources
+    }
+
+    func fortify(){
+        print("Defences increased!")
+    }
+}
+
+var anotherTown = Town(name: "Louisland", citizens: ["Louis", "Anney"], resources: ["Mondy": 100, "Water": 1000])
+anotherTown.fortify()
+print(anotherTown.name)
 
 
 
