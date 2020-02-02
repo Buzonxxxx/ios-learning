@@ -13,10 +13,18 @@
 		9B5BC715220F55D20047CFA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BC714220F55D20047CFA4 /* Assets.xcassets */; };
 		9B5BC718220F55D20047CFA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BC716220F55D20047CFA4 /* LaunchScreen.storyboard */; };
 		9B5BC723220F55D20047CFA4 /* TAUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BC722220F55D20047CFA4 /* TAUTests.swift */; };
+		BF7358DE23E71DDB00E91B12 /* TAUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7358DD23E71DDB00E91B12 /* TAUUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9B5BC71F220F55D20047CFA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B5BC702220F55C20047CFA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B5BC709220F55C20047CFA4;
+			remoteInfo = TAU;
+		};
+		BF7358E023E71DDB00E91B12 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9B5BC702220F55C20047CFA4 /* Project object */;
 			proxyType = 1;
@@ -36,6 +44,9 @@
 		9B5BC71E220F55D20047CFA4 /* TAUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5BC722220F55D20047CFA4 /* TAUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUTests.swift; sourceTree = "<group>"; };
 		9B5BC724220F55D20047CFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF7358DB23E71DDB00E91B12 /* TAUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7358DD23E71DDB00E91B12 /* TAUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAUUITests.swift; sourceTree = "<group>"; };
+		BF7358DF23E71DDB00E91B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +64,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF7358D823E71DDB00E91B12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +79,7 @@
 			children = (
 				9B5BC70C220F55C20047CFA4 /* TAU */,
 				9B5BC721220F55D20047CFA4 /* TAUTests */,
+				BF7358DC23E71DDB00E91B12 /* TAUUITests */,
 				9B5BC70B220F55C20047CFA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +89,7 @@
 			children = (
 				9B5BC70A220F55C20047CFA4 /* TAU.app */,
 				9B5BC71E220F55D20047CFA4 /* TAUTests.xctest */,
+				BF7358DB23E71DDB00E91B12 /* TAUUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +114,15 @@
 				9B5BC724220F55D20047CFA4 /* Info.plist */,
 			);
 			path = TAUTests;
+			sourceTree = "<group>";
+		};
+		BF7358DC23E71DDB00E91B12 /* TAUUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF7358DD23E71DDB00E91B12 /* TAUUITests.swift */,
+				BF7358DF23E71DDB00E91B12 /* Info.plist */,
+			);
+			path = TAUUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,13 +163,31 @@
 			productReference = 9B5BC71E220F55D20047CFA4 /* TAUTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BF7358DA23E71DDB00E91B12 /* TAUUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF7358E423E71DDB00E91B12 /* Build configuration list for PBXNativeTarget "TAUUITests" */;
+			buildPhases = (
+				BF7358D723E71DDB00E91B12 /* Sources */,
+				BF7358D823E71DDB00E91B12 /* Frameworks */,
+				BF7358D923E71DDB00E91B12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF7358E123E71DDB00E91B12 /* PBXTargetDependency */,
+			);
+			name = TAUUITests;
+			productName = TAUUITests;
+			productReference = BF7358DB23E71DDB00E91B12 /* TAUUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9B5BC702220F55C20047CFA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Shashikant Jagtap";
 				TargetAttributes = {
@@ -149,6 +196,10 @@
 					};
 					9B5BC71D220F55D20047CFA4 = {
 						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9B5BC709220F55C20047CFA4;
+					};
+					BF7358DA23E71DDB00E91B12 = {
+						CreatedOnToolsVersion = 11.3.1;
 						TestTargetID = 9B5BC709220F55C20047CFA4;
 					};
 				};
@@ -168,6 +219,7 @@
 			targets = (
 				9B5BC709220F55C20047CFA4 /* TAU */,
 				9B5BC71D220F55D20047CFA4 /* TAUTests */,
+				BF7358DA23E71DDB00E91B12 /* TAUUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +236,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9B5BC71C220F55D20047CFA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF7358D923E71DDB00E91B12 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,6 +269,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF7358D723E71DDB00E91B12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7358DE23E71DDB00E91B12 /* TAUUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,6 +284,11 @@
 			isa = PBXTargetDependency;
 			target = 9B5BC709220F55C20047CFA4 /* TAU */;
 			targetProxy = 9B5BC71F220F55D20047CFA4 /* PBXContainerItemProxy */;
+		};
+		BF7358E123E71DDB00E91B12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B5BC709220F55C20047CFA4 /* TAU */;
+			targetProxy = BF7358E023E71DDB00E91B12 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -438,6 +510,46 @@
 			};
 			name = Release;
 		};
+		BF7358E223E71DDB00E91B12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZKAV74ARP;
+				INFOPLIST_FILE = TAUUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.louisliao.TAUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TAU;
+			};
+			name = Debug;
+		};
+		BF7358E323E71DDB00E91B12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7ZKAV74ARP;
+				INFOPLIST_FILE = TAUUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.louisliao.TAUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TAU;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -464,6 +576,15 @@
 			buildConfigurations = (
 				9B5BC72B220F55D20047CFA4 /* Debug */,
 				9B5BC72C220F55D20047CFA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF7358E423E71DDB00E91B12 /* Build configuration list for PBXNativeTarget "TAUUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF7358E223E71DDB00E91B12 /* Debug */,
+				BF7358E323E71DDB00E91B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
