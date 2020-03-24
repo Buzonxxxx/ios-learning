@@ -11,15 +11,27 @@ import Foundation
 class Concentration {
     var cards = [Card]()
     
+    var indexOfOneAndOnlyFacedUpCard: Int?
+    
     func chooseCard(at index: Int) {
-        if cards[index].isFaceUp{
-            cards[index].isFaceUp = false
-        } else {
-            cards[index].isFaceUp = true
+        if !cards[index].isMatched {
+            if let matchIndex = indexOfOneAndOnlyFacedUpCard, matchIndex != index{
+                //  check if cards match
+                if cards[matchIndex].indentifier == cards[index].indentifier {
+                    cards[matchIndex].isMatched = true
+                    cards[index].isMatched = true
+                }
+                cards[index].isFaceUp = true
+                indexOfOneAndOnlyFacedUpCard = nil
+            } else {
+                // either no cards or 2 cards are face up
+                for flipDownIndex in cards.indices {
+                    cards[flipDownIndex].isFaceUp = false
+                }
+                cards[index].isFaceUp = true
+                indexOfOneAndOnlyFacedUpCard = index
+            }
         }
-//        if !cards[index].isMatched {
-            
-//        }
     }
     
     init(numberOFPairsOfCards: Int) {
