@@ -15,7 +15,6 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func highSlider(_ sender: UISlider) {
-        //        Float(round(100*sender.value)/100)
         let height = String(format: "%.2f", sender.value)
         heightLabel.text = "\(height)m"
     }

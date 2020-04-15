@@ -18,24 +18,22 @@ class EmergencyCalHandler {
 
 // ViewController
 struct Paramedic: AdvancedLifeSupport {
-    
     init(handler: EmergencyCalHandler) {
         handler.delegate = self
     }
     func performCPR() {
-        print("The paramedic does chest cpmpressions, 30s per second.")
+        print("The paramedic does chest compressions, 30s per second.")
     }
 }
 
 // ViewController
 class Doctor: AdvancedLifeSupport {
-    
     init(handler: EmergencyCalHandler) {
         handler.delegate = self
     }
     
     func performCPR() {
-        print("The doctor does chest cpmpressions, 30s per second.")
+        print("The doctor does chest compressions, 30s per second.")
     }
     
     func useStethescope() {

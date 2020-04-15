@@ -1,12 +1,12 @@
 
-// Class: pass by reference
-// Struct: pass by value (make copy)
+// Class: pass by reference, need init()
+// Struct: pass by value (make copy), free init()
 
-let skelton1 = Enemy(health: 100, attackStrength: 10)
-let skelton2 = Enemy(health: 100, attackStrength: 10)
-
-skelton1.takeDamage(amount: 10)
-print(skelton1.health)
+//let skelton1 = Enemy(health: 100, attackStrength: 10)
+//let skelton2 = Enemy(health: 100, attackStrength: 10)
+//
+//skelton1.takeDamage(amount: 10)
+//print(skelton1.health)
 
 let dragon = Dragon(health: 1000, attackStrength: 50)
 dragon.wingSpan = 5

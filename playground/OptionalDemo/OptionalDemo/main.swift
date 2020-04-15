@@ -1,34 +1,34 @@
 // [Force unwrapping]
-//let myoptional: String?
-//myoptional = "Louis"
-//let text: String = myoptional!
-//print(text)
+let optional1: String?
+optional1 = "Louis"
+let text = optional1!
+print(text)
 
-// [check for nil value]
-//let myOptional: String?
-//myOptional = nil
-//if myOptional != nil {
-//    let text = myOptional!
-//    print(text)
-//} else {
-//    print("myoptional was found to be nil")
-//}
+// [Check for nil value]
+let optional2: String?
+optional2 = nil
+if optional2 != nil {
+    let text = optional2!
+    print(text)
+} else {
+    print("myoptional was found to be nil")
+}
 
-// [optional binding]
-//let myOptional: String?
-//myOptional = "Louis"
-//if let safeOptional = myOptional {
-//    let text = safeOptional
-//    print(text)
-//} else {
-//    print("myoptional was found to be nil")
-//}
+// [Optional binding]
+let optional3: String?
+optional3 = "Louis"
+if let safeOptional = optional3 {
+    let text = safeOptional
+    print(text)
+} else {
+    print("myoptional was found to be nil")
+}
 
-// [nil coalescing]
-//let myOptional: String?
-//myOptional = nil
-//let text = myOptional ?? "I'm default value"
-//print(text)
+// [Nil coalescing]
+let optional4: String?
+optional4 = nil
+let myText = optional4 ?? "I'm default value"
+print(myText)
 
 
 // [Optional Chaining]
@@ -38,10 +38,9 @@ struct MyOptional {
         print("I am the struct's method.")
     }
 }
-
 let myOptional: MyOptional?
+myOptional = MyOptional()   
 
-myOptional = MyOptional()
 myOptional?.method()
 print(myOptional?.property ?? 0)
 

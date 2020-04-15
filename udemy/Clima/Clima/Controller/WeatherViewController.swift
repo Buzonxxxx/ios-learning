@@ -30,12 +30,10 @@ class WeatherViewController: UIViewController {
 
 
 // MARK: - UITextFieldDelegate
-
 extension WeatherViewController: UITextFieldDelegate {
-    
     @IBAction func searchPressed(_ sender: UIButton) {
-        searchTextField.endEditing(true)
         print(searchTextField.text!)
+        searchTextField.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -51,7 +49,6 @@ extension WeatherViewController: UITextFieldDelegate {
             textField.placeholder = "Type something"
             return false
         }
-        
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
