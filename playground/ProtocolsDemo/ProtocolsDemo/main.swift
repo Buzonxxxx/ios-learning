@@ -23,7 +23,7 @@ class Eagle: Bird, CanFly {
         print("The eagle flaps its wings and lifts off into the sky.")
     }
     func soar() {
-        print("The eagle glides in the air usingair currents.")
+        print("The eagle glides in the air using air currents.")
     }
 }
 
@@ -48,8 +48,13 @@ struct Airplane: CanFly {
 let myEagle = Eagle()
 let myPenguin = Penguin()
 let myPlane = Airplane()
-
+myEagle.fly()
 myPlane.fly()
+
 let meseum = FlyingMuseum()
 meseum.flyingDemo(flyingObject: myEagle)
 meseum.flyingDemo(flyingObject: myPlane)
+
+
+
+
